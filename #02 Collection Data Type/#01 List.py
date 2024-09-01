@@ -118,3 +118,34 @@ for x in a:
 
 for i in range(len(a)):
     print(a[i])
+
+# =================== while loop ============
+i = 0
+while i in range(len(a)):
+    print(a[i])
+    i += 1
+
+i = 0
+while i < len(a):
+    print(a[i])
+    i += 1
+
+
+
+# ================================== LIST COMPREHENSION ===========================
+# List comprehensions offers a shorter syntax for when you want to create a newList based on the values of the existing list
+
+a = ["apple", "banana", "cherry", "kiwi", "mango"]
+newList = []
+
+
+# newList contains all the values from the list "a", which has character "a" in them
+for x in a:
+    if 'a' in x:
+        newList.append(x)
+
+print(newList)
+
+
+newList = [x for x in a if 'a' in x]
+print(newList)
